@@ -14,7 +14,7 @@ int is_bst_valid(const binary_tree_t *tree, int low, int high)
 	{
 		if (tree->n < low || tree->n > high)
 			return (0);
-		return (is_bst_valid(tree->left, low, tree->n - 1)&&
+		return (is_bst_valid(tree->left, low, tree->n - 1) &&
 			is_bst_valid(tree->right, tree->n + 1, high));
 	}
 	return (1);
