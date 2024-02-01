@@ -10,7 +10,7 @@
  */
 int is_bst_valid(const binary_tree_t *tree, int low, int high)
 {
-	if (tree == NULL)
+	if (tree != NULL)
 	{
 		if (tree->n < low || tree->n > high)
 			return (0);
